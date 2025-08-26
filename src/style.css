@@ -16,7 +16,7 @@ img {
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
@@ -52,16 +52,14 @@ body {
   text-transform: uppercase;
   color: #000;
   position: relative;
-  margin-left: 20px;
 }
 
-.first_nav_link {
-  margin-left: 0;
-}
-
-/* Hover */
 .nav__link:hover {
   color: var(--blue);
+}
+
+.nav__item:not(:first-child) .nav__link {
+  margin-left: 20px;
 }
 
 /* Active link underline */
