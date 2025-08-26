@@ -1,5 +1,11 @@
 /* Basic */
-* {
+body,
+header,
+nav,
+ul,
+li,
+a,
+img {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,12 +23,12 @@ body {
   font-size: 12px;
 }
 
-.img-logo {
+.header__logo-link {
   margin-top: 4px;
 }
 
 /* Header layout */
-header {
+.header {
   width: 100%;
   display: flex;
   align-items: center;
@@ -32,42 +38,38 @@ header {
 }
 
 /* Nav menu */
-nav ul {
+.nav__list {
   display: flex;
   list-style: none;
 }
 
-nav ul li {
-  margin-left: 20px;
-}
-
-nav ul li:first-child {
-  margin-left: 0;
-}
-
-nav a {
+.nav__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 15px;
+  height: 60px;
   text-decoration: none;
   text-transform: uppercase;
   color: #000;
   position: relative;
-  padding: 30px 0;
+  margin-left: 20px;
+}
+
+.first_nav_link {
+  margin-left: 0;
 }
 
 /* Hover */
-nav a:hover {
+.nav__link:hover {
   color: var(--blue);
 }
 
 /* Active link underline */
-nav a.is-active {
+.nav__link.is-active {
   color: var(--blue);
 }
 
-nav a.is-active::after {
+.nav__link.is-active::after {
   content: '';
   position: absolute;
   bottom: 0;
